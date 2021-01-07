@@ -1,0 +1,48 @@
+// to begin this project
+// difference between xmlsitemap2 and xmlsitemap, 
+// xmlsitemap2 used Puppeteer to scrape number of H1 and H2
+
+mkdir xmlsitemap2
+cd xmlsitemap2
+code .
+npm init -y
+npm install express puppeteer body-parser node-fetch cors sitemapper user-agents --save
+npm install nodemon --save-dev
+
+// in package.json
+    "start-dev": "nodemon server"
+
+// create basic back end and front end directories and files
+mkdir server
+touch server/index.js
+mkdir public
+touch public/app.js public/index.html
+
+// 
+test basic GET POST code 
+
+// run the server
+npm run start-dev
+
+
+// Without front end is ok, this is a back end only project that produce JSON result,
+// This front end got redirected the path is for testing, everything can be test with Postman.
+
+
+// in app.js
+let backendRoute = new URL("http://localhost:8000/api");
+
+
+// in index.js
+xmlsitemap2 used Puppeteer to scrape number of H1 and H2 and "goto" response "_status" for status code
+
+// possible problem might need to test run more to see if any timeout happen
+
+// github repo
+echo "# xmlsitemap2" >> README.md
+git init
+git add .
+git commit -m "used Puppeteer to scrape number of H1 and H2 and "goto" response "_status" for status code"
+git branch -M main
+git remote add origin https://github.com/fruit13ok/xmlsitemap2.git
+git push -u origin main
